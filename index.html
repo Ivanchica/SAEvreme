@@ -1,0 +1,51 @@
+<html>
+<head>
+	<title>Vremenko</title>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script src="http://maps.googleapis.com/maps/api/js?v=3.exp&sensor=true"></script>
+
+	<script type="text/javascript" src="js/vremenkoP.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="css/vremenkoP.css">
+
+</head>
+
+<body id="doby">
+
+	<!-- prvo polje - korisnik unosi podatke -->
+	<div id="grad">
+		<input type="text" id="inp" 	class="unos" placeholder="Unesite ime grada">
+		<input type="button" id="dugme" class="unos" value="ok">
+	</div>
+
+	<!-- drugo polje - trenutna temperatura, pritisak i nebo -->
+	<div id="vreme">
+		<div id="temp">
+			<span id="temperatura"></span>
+		</div>
+		<div id="ostalo">
+			<div id="slika"></div>
+			<div id="pritisak"></div>
+		</div>
+	</div>
+
+	<!-- trece polje - prognoza za naredna tri dana -->
+	<div id="prognoza">
+		<div class="prog">
+			<div id="dan1tekst" class="dan"> </div>
+			<div id="dan1slika" class="danSlika"></div>
+		</div>
+		<div class="prog">
+			<div id="dan2tekst" class="dan"> </div>
+			<div id="dan2slika" class="danSlika"></div>
+		</div>
+		<div class="prog">
+			<div id="dan3tekst" class="dan"> </div>
+			<div id="dan3slika" class="danSlika"></div>
+		</div>
+	</div>
+
+</body>
+</html>
